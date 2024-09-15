@@ -24,3 +24,6 @@ Il y a :
 qui se sont rajouté
 
 
+Question 1.3 que contient la réponse reçue par le client ?
+
+Le client ne reçoit aucune réponse, la page ne s'ouvre pas
