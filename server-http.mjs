@@ -10,15 +10,27 @@ async function requestListener(request, response) {
   response.setHeader("Content-Type", "text/html");
   try {
     const contents = await fs.readFile("index.html", "utf8");
-    switch (request.url) {
-      case "/index.html":
+    
+    switch (request.url.split("/")[1]){
+      case "index.html":
         response.writeHead(200);
         return response.end(contents);
-      case "/random.html":
+      case "random.html":
         response.writeHead(200);
         return response.end(`<html><p>${Math.floor(100 * Math.random())}</p></html>`);
-      default:
-        response.writeHead(404);
+      case "random":
+        
+        const nb = parseInt(request.url.split('/')[2])
+        
+        let texte = ""
+        for (let ite = 0; ite<nb; ite++){
+          texte+=`<p>${Math.floor(100 * Math.random())}</p>`
+        }
+        
+        return response.end(`<html>${texte}</html>`)
+
+    default:
+      response.writeHead(404);
         return response.end(`<html><p>404: NOT FOUND</p></html>`);
     }
   } catch (error) {
