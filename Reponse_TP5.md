@@ -55,3 +55,17 @@ le dossier node_modules et le fichier package-lock.json on été ajouté
 Question 1.7 quelles sont les différences entre les scripts http-dev et http-prod ?
 
 Avec http-dev chaque changement dans server-http.mjs est sauvegarder et le serveurs et rafraichit alors qu'avec http-prod le serveur n'est pas actualier a chaque changment dans server-htpp.mjs
+
+Question 1.8 donner les codes HTTP reçus par votre navigateur pour chacune des quatre pages précédentes.
+
+Avec :
+    -http://localhost:8000/index.html on a le code 200
+    -http://localhost:8000/random.html on a le code 200
+    -http://localhost:8000/ on a le code 404
+    -http://localhost:8000/dont-exist on a le code 404
+
+
+     
+    
+    
+    
