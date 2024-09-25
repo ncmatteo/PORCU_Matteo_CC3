@@ -95,3 +95,6 @@ Question 2.4 quand l’événement listening est-il déclenché ?
 
     L'évènement listening est déclenché quand le serveur passe en "on" c'est a dire quand on le lance.
 
+Question 2.5 indiquer quelle est l’option (activée par défaut) qui redirige / vers /index.html ?
+
+    c'est le paramètre ('static') qui renvoie automatiquement / vers /index.html (si il est présent)
