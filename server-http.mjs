@@ -4,6 +4,8 @@ import fs from "node:fs/promises";
 const host = "localhost";
 const port = 8000;
 
+console.log("NODE_ENV =", process.env.NODE_ENV);
+
 async function requestListener(_request, response) {
   try {
     const contents = await fs.readFile("index.html", "utf8");
@@ -21,4 +23,5 @@ async function requestListener(_request, response) {
 const server = http.createServer(requestListener);
 server.listen(port, host, () => {
   console.log(`Server is running on http://${host}:${port}`);
+
 });

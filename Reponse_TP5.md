@@ -52,5 +52,6 @@ Question 1.6 indiquer ce que cette commande a modifié dans votre projet.
 
 le dossier node_modules et le fichier package-lock.json on été ajouté
 
+Question 1.7 quelles sont les différences entre les scripts http-dev et http-prod ?
 
-
+Avec http-dev chaque changement dans server-http.mjs est sauvegarder et le serveurs et rafraichit alors qu'avec http-prod le serveur n'est pas actualier a chaque changment dans server-htpp.mjs
