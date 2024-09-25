@@ -8,7 +8,7 @@
     "http-dev": "cross-env NODE_ENV=development nodemon server-http.mjs",
     "http-prod": "cross-env NODE_ENV=production node server-http.mjs",
     "express-prod": "cross-env NODE_ENV=production node server-express.mjs",
-    "express-dev":"cross-env NODE_ENV=development nodemon server-express.mjs"
+    "express-dev": "cross-env NODE_ENV=development nodemon server-express.mjs"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/ncmatteo/devweb-tp5#readme",
   "dependencies": {
     "cross-env": "^7.0.3",
+    "ejs": "^3.1.10",
     "express": "^4.21.0",
     "http-errors": "^2.0.0",
     "loglevel": "^1.9.2",
