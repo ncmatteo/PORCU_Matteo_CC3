@@ -1,3 +1,5 @@
+PARTIE 1:
+
 Question 1.1 donner la liste des en-têtes de la réponse HTTP du serveur.
 
 HTTP/1.1 200 OK
@@ -63,6 +65,16 @@ Avec :
     -http://localhost:8000/random.html on a le code 200
     -http://localhost:8000/ on a le code 404
     -http://localhost:8000/dont-exist on a le code 404
+
+
+PARTIE 2:
+
+Question 2.1 donner les URL des documentations de chacun des modules installés par la commande précédente.
+    URL:
+        -Express: https://expressjs.com
+        -http-errors: https://github.com/jshttp/http-errors
+        -loglevel: https://github.com/pimterry/loglevel
+        -morgan: https://github.com/expressjs/morgan
 
 
      
