@@ -48,7 +48,9 @@ async function requestListener(_request, response) {
   }
 }
 
+Question 1.6 indiquer ce que cette commande a modifié dans votre projet.
 
+le dossier node_modules et le fichier package-lock.json on été ajouté
 
 
 
