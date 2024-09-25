@@ -76,8 +76,18 @@ Question 2.1 donner les URL des documentations de chacun des modules installés 
         -loglevel: https://github.com/pimterry/loglevel
         -morgan: https://github.com/expressjs/morgan
 
+Question 2.2 vérifier que les trois routes fonctionnent.
 
-     
-    
-    
+    Les 3 routes fonctionnent bien
+
+
+Question 2.3 lister les en-têtes des réponses fournies par Express. Lesquelles sont nouvelles par rapport au serveur HTTP ?
+
+-X-Powered-By: Express
+-Accept-Ranges: bytes
+-Cache-Control: public, max-age=0
+-Last-Modified: Wed, 25 Sep 2024 02:31:33 GMT
+-ETag: W/"eb-192270503a4"
+-Content-Type: text/html; charset=UTF-8
+-Content-Length: 235
     
