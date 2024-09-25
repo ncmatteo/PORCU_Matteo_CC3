@@ -98,3 +98,12 @@ Question 2.4 quand l’événement listening est-il déclenché ?
 Question 2.5 indiquer quelle est l’option (activée par défaut) qui redirige / vers /index.html ?
 
     c'est le paramètre ('static') qui renvoie automatiquement / vers /index.html (si il est présent)
+
+Question 2.6 visiter la page d’accueil puis rafraichir (Ctrl+R) et ensuite forcer le rafraichissement (Ctrl+Shift+R). Quels sont les codes HTTP sur le fichier style.css ? Justifier.
+    Avec:
+        -(Ctrl + R) on a un code 304 qui dit que le fichier css n'as pas été changé 
+        -(Ctrl+Shift+R) on a un code 200 qui dit que le fichier css bien été trouvé et chargé
+
+
+
+
