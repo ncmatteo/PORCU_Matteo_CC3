@@ -32,6 +32,23 @@ Question 1.4 quelle est l’erreur affichée dans la console ?
 
 L'erreur adffcihé dans la console est l'erreur -4058
 
+Question 1.5 donner le code de requestListener() modifié avec gestion d’erreur en async/await.
+
+async function requestListener(_request, response) {
+  try {
+    const contents = await fs.readFile("index.html", "utf8");
+    response.setHeader("Content-Type", "text/html");
+    response.writeHead(200);
+    response.end(contents);
+  } catch (error) {
+    console.error(error);
+    response.setHeader("Content-Type", "text/plain");
+    response.writeHead(500);
+    response.end("Erreur 500");
+  }
+}
+
+
 
 
 
