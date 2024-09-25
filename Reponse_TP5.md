@@ -91,3 +91,7 @@ Question 2.3 lister les en-têtes des réponses fournies par Express. Lesquelles
 -Content-Type: text/html; charset=UTF-8
 -Content-Length: 235
     
+Question 2.4 quand l’événement listening est-il déclenché ?
+
+    L'évènement listening est déclenché quand le serveur passe en "on" c'est a dire quand on le lance.
+
