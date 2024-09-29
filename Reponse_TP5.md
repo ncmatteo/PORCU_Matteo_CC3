@@ -104,6 +104,8 @@ Question 2.6 visiter la page d’accueil puis rafraichir (Ctrl+R) et ensuite for
         -(Ctrl + R) on a un code 304 qui dit que le fichier css n'as pas été changé 
         -(Ctrl+Shift+R) on a un code 200 qui dit que le fichier css bien été trouvé et chargé
 
+Question 2.7 vérifier que l’affichage change bien entre le mode production et le mode development.
 
+  Oui l'affichage change bien entre les 2 modes 
 
 
