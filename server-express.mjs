@@ -1,5 +1,6 @@
 import express from "express";
 import morgan from "morgan";
+import createError from "http-errors";
 
 const host = "localhost";
 const port = 8000;
@@ -13,9 +14,13 @@ app.set("view engine", "ejs");
 app.use(express.static("static"));
 
 
-
 app.get("/random/:nb", async function (request, response, next) {
     const length = Number.parseInt(request.params.nb, 10);
+
+    if(Number.isNaN(length)){
+        return(next(createError(400)));
+    }
+
     const numbers = Array.from({ length }, () => Math.floor(100 * Math.random()));
     const welcome = "Voici vos nombres aléatoires :";
     
@@ -33,3 +38,4 @@ server.on("listening", () =>
 );
 
 console.info(`File ${import.meta.url} executed.`);
+
